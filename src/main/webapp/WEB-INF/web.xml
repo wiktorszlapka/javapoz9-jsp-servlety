@@ -7,7 +7,10 @@
         <servlet-name>CalcServlet</servlet-name>
         <servlet-class>com.sda.CalcServlet</servlet-class>
     </servlet>
-
+    <servlet>
+        <servlet-name>CalcFormServlet</servlet-name>
+        <servlet-class>com.sda.CalcFormServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/hello-world</url-pattern>
@@ -16,5 +19,9 @@
     <servlet-mapping>
         <servlet-name>CalcServlet</servlet-name>
         <url-pattern>/calc/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CalcFormServlet</servlet-name>
+        <url-pattern>/calc-form</url-pattern>
     </servlet-mapping>
 </web-app>
